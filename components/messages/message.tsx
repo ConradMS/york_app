@@ -228,10 +228,10 @@ export const Message: FC<MessageProps> = ({
                   />
                 ) : (
                   <WithTooltip
-                    display={<div>{MODEL_DATA?.modelName}</div>}
+                    display={<div>York assistant</div>}
                     trigger={
                       <ModelIcon
-                        provider={modelDetails?.provider || "custom"}
+                        provider={"york"}
                         height={ICON_SIZE}
                         width={ICON_SIZE}
                       />
@@ -261,7 +261,7 @@ export const Message: FC<MessageProps> = ({
                       )?.name
                     : selectedAssistant
                       ? selectedAssistant?.name
-                      : MODEL_DATA?.modelName
+                      : "York Assistant"
                   : profile?.display_name ?? profile?.username}
               </div>
             </div>

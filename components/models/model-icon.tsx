@@ -2,6 +2,7 @@ import { cn } from "@/lib/utils"
 import mistral from "@/public/providers/mistral.png"
 import groq from "@/public/providers/groq.png"
 import perplexity from "@/public/providers/perplexity.png"
+import york from "@/public/providers/york.png"
 import { ModelProvider } from "@/types"
 import { IconSparkles } from "@tabler/icons-react"
 import { useTheme } from "next-themes"
@@ -97,6 +98,19 @@ export const ModelIcon: FC<ModelIconProps> = ({
           )}
           src={perplexity.src}
           alt="Mistral"
+          width={width}
+          height={height}
+        />
+      )
+    case "york":
+      return (
+        <Image
+          className={cn(
+            "rounded-sm p-1",
+            theme === "dark" ? "bg-white" : "border-DEFAULT border-black"
+          )}
+          src={york.src}
+          alt="York"
           width={width}
           height={height}
         />
