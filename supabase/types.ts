@@ -1555,7 +1555,7 @@ export type Database = {
       }
       match_link_descriptions: {
         Args: {
-          query_embedding: string
+          query_embedding: number[]
           match_threshold: number
           match_count: number
         }
